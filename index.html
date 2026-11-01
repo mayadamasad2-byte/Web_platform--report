@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بحث عن JavaScript</title>
+  <style>
+    :root { --navy:#172554; --blue:#2563eb; --light:#eff6ff; --ink:#1f2937; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Tahoma, Arial, sans-serif; line-height:1.9; color:var(--ink); background:#f5f7fb; }
+    header { color:white; text-align:center; padding:54px 18px 42px; background:linear-gradient(135deg,#172554,#2563eb); }
+    header h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,3rem); }
+    header p { margin:5px 0; color:#e0eaff; }
+    nav { position:sticky; top:0; z-index:5; background:white; padding:12px; text-align:center; box-shadow:0 2px 10px #00000012; }
+    nav a { color:var(--navy); text-decoration:none; font-weight:bold; margin:0 12px; }
+    main { width:min(1000px,92%); margin:30px auto; }
+    section { background:white; padding:25px; margin:22px 0; border-radius:16px; box-shadow:0 5px 20px #1725540d; }
+    h2 { color:var(--navy); border-right:5px solid var(--blue); padding-right:12px; }
+    h3 { color:#1d4ed8; margin-bottom:5px; }
+    .student { background:#dbeafe; color:#172554; padding:15px; border-radius:12px; margin:20px auto 0; max-width:650px; }
+    .hero-image { display:block; width:min(100%,680px); margin:20px auto; border-radius:14px; }
+    .table-wrap { overflow-x:auto; }
+    table { border-collapse:collapse; width:100%; min-width:480px; margin-top:15px; }
+    th,td { border:1px solid #cbd5e1; padding:12px; text-align:right; }
+    th { background:#dbeafe; color:#172554; }
+    tr:nth-child(even) td { background:#f8fafc; }
+    a { color:#1d4ed8; }
+    .note { background:var(--light); border-right:4px solid var(--blue); padding:12px 16px; border-radius:8px; }
+    footer { text-align:center; padding:25px; color:#64748b; }
+    @media(max-width:600px) { section { padding:18px; } nav a { margin:0 6px; font-size:14px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>بحث عن لغة JavaScript</h1>
+    <p>دورها في جعل صفحات الويب تفاعلية</p>
+    <div class="student">
+      <p><strong>اسم الطالبة:</strong> ميادة مسعد محمد الحميدي أحمد الدريبي</p>
+      <p><strong>الرقم الجامعي:</strong> 2501561</p>
+      <p><strong>إشراف:</strong> د. مها زغلول</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#intro">المقدمة</a>
+    <a href="#content">عرض الموضوع</a>
+    <a href="#comparison">مقارنة</a>
+    <a href="#references">المراجع</a>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h2>أولاً: المقدمة والتعريف</h2>
+      <p>المواقع في الماضي كانت ثابتة، والمستخدم يدخل ليقرأ ويمشي. لكن مع ظهور <strong>JavaScript</strong> سنة 1995 بواسطة <strong>Brendan Eich</strong>، أصبحت المواقع تتفاعل مع ضغطات المستخدم لحظياً دون الحاجة إلى تحميل الصفحة من جديد.</p>
+      <h3>ما هي JavaScript؟</h3>
+      <p>هي لغة برمجة تعمل داخل المتصفح، ومسؤولة عن التفاعل مع المستخدم. فمثلاً عند الضغط على زر إعجاب، أو فتح قائمة، أو ظهور رسالة، تكون JavaScript هي التي تنفذ هذا التفاعل.</p>
+      <img class="hero-image" src="javascript-illustration.svg" alt="رسم توضيحي يرمز إلى لغة JavaScript وتطوير صفحات الويب">
+      <p class="note"><strong>معلومة مهمة:</strong> تعمل HTML على بناء هيكل الصفحة، وCSS على تنسيق الشكل والألوان، بينما تضيف JavaScript التفاعل والحركة.</p>
+    </section>
+
+    <section id="content">
+      <h2>ثانياً: كيف تعمل مع ضغطات المستخدم؟</h2>
+      <p>تعتمد JavaScript على ما يسمى <strong>الأحداث (Events)</strong>؛ وهي أفعال يقوم بها المستخدم مثل الضغط على زر أو الكتابة أو تحريك الماوس.</p>
+      <h3>خطوات تنفيذ الحدث</h3>
+      <ol>
+        <li><strong>الحدث (Event):</strong> يضغط المستخدم على زر أو يقوم بحركة ما.</li>
+        <li><strong>مستمع الحدث (Event Listener):</strong> يراقب العنصر وينتظر حدوث الفعل المطلوب.</li>
+        <li><strong>المعالج (Handler):</strong> ينفذ الأمر المحدد عند وقوع الحدث.</li>
+        <li><strong>تعديل DOM:</strong> تتغير محتويات الصفحة أو شكلها دون إعادة تحميلها بالكامل.</li>
+      </ol>
+      <h3>أمثلة عملية</h3>
+      <ul>
+        <li>إظهار نافذة منبثقة (Modal) عند الضغط.</li>
+        <li>التحقق من صحة الإيميل قبل الإرسال.</li>
+        <li>تغيير لون زر بعد الضغط عليه.</li>
+        <li>فتح قائمة منسدلة (Dropdown Menu).</li>
+      </ul>
+      <h3>مثال كود بسيط</h3>
+      <pre dir="ltr" style="background:#0f172a;color:#e2e8f0;padding:18px;border-radius:10px;overflow-x:auto;"><code>const btn = document.getElementById('myBtn');
+
+btn.addEventListener('click', () =&gt; {
+  alert('تم الضغط!');
+});</code></pre>
+      <p>في هذا المثال، عند الضغط على الزر الذي يحمل المعرّف <strong>myBtn</strong> تظهر رسالة تنبيه مكتوب فيها «تم الضغط!».</p>
+    </section>
+
+    <section id="comparison">
+      <h2>ثالثاً: مقارنة بين HTML وCSS وJavaScript</h2>
+      <p>تعمل اللغات الثلاث معاً لتكوين موقع ويب متكامل، ولكل لغة وظيفة مختلفة:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>اللغة</th><th>وظيفتها الأساسية</th><th>مثال</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>HTML</strong></td><td>بناء هيكل ومحتوى الصفحة</td><td>عنوان أو فقرة أو صورة</td></tr>
+            <tr><td><strong>CSS</strong></td><td>تنسيق الشكل والألوان</td><td>تغيير لون العنوان وحجم الخط</td></tr>
+            <tr><td><strong>JavaScript</strong></td><td>إضافة التفاعل والحركة</td><td>زر يعرض رسالة عند الضغط</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>رابعاً: المميزات والعيوب والخاتمة</h2>
+      <h3>المميزات</h3>
+      <ul>
+        <li>تفاعل فوري بدون تحميل الصفحة.</li>
+        <li>تحسين تجربة المستخدم (UX).</li>
+        <li>تعمل على معظم المتصفحات والهواتف.</li>
+        <li>توجد مكتبات وأطر عمل جاهزة مثل React وVue تسهّل العمل.</li>
+      </ul>
+      <h3>العيوب</h3>
+      <ul>
+        <li>لو المستخدم قفل JavaScript، بعض وظائف الموقع قد لا تعمل بشكل صحيح.</li>
+        <li>قد تسبب بطئاً إذا كان الكود كبيراً أو غير منظم.</li>
+      </ul>
+      <h3>الخاتمة</h3>
+      <p>حولت JavaScript الويب من صفحات ثابتة إلى تطبيقات تفاعلية مثل فيسبوك ويوتيوب. وفهم طريقة عمل الأحداث و<strong>DOM</strong> هو أساس مهم لتطوير ويب ناجح.</p>
+    </section>
+
+    <section id="references">
+      <h2>خامساً: المراجع</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener">MDN Web Docs – JavaScript Guide</a></li>
+        <li><a href="https://www.w3schools.com/js/js_events.asp" target="_blank" rel="noopener">W3Schools – JavaScript Events</a></li>
+        <li>Marijn Haverbeke, <em>Eloquent JavaScript</em>, 2022.</li>
+        <li><a href="https://javascript.info/" target="_blank" rel="noopener">JavaScript.info – The Modern JavaScript Tutorial</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>نهاية البحث – Task 2 | تطبيقات الإنترنت والمنصات الإلكترونية</footer>
+</body>
+</html>
